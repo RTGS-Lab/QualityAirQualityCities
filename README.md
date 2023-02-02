@@ -2,6 +2,6 @@
 
 # Project Purpose
 
-# Infrastructure
+# Infrastructure and Deployment
 
 # Contributors
