@@ -1,4 +1,4 @@
-![Quality Air](https://user-images.githubusercontent.com/97995925/218175181-a92575c0-142c-4836-9558-ffc735b32bbe.png)
+![Quality Air](https://user-images.githubusercontent.com/97995925/218176014-abeaf7e2-899f-4d85-beaf-7bbee76a279f.png)
 
 # Quality Air Quality Cities
 
