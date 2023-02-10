@@ -4,14 +4,14 @@
 
 CREATE DATABASE "MplsCommunityAir"; -- Create the database
 
-\c "MplsCommunityAir"; -- Connect to database
+\c MplsCommunityAir; -- Connect to database
 
-CREATE SCHEMA "PurpleAir"; -- Create Schema
+CREATE SCHEMA PurpleAir; -- Create Schema
 
 CREATE EXTENSION postgis; -- Add spatial extensions
 CREATE EXTENSION postgis_topology;
 
-CREATE TABLE PurpleAir.:MplsPurpleAirSensors -- Create table to store information on each sensor
+CREATE TABLE PurpleAir.MplsPurpleAirSensors -- Create table to store information on each sensor
 (
     sensor_id serial, -- Unique identifier
 	custodian_type text, -- Volunteer, business, MPRB (Parks & Rec), etc.
@@ -25,7 +25,7 @@ CREATE TABLE PurpleAir.:MplsPurpleAirSensors -- Create table to store informatio
 	geom geometry
 );
 
-CREATE TABLE PurpleAir.:MplsPurpleAirHistoric -- Create table to store historic readings
+CREATE TABLE PurpleAir.MplsPurpleAirHistoric -- Create table to store historic readings
 (
     sensor_id int, -- Unique identifier
     timestamp timestamp [ 0 ], -- Timestamp
