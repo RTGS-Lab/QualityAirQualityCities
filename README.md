@@ -1,4 +1,4 @@
-![Quality Air](https://user-images.githubusercontent.com/97995925/218174589-70892d79-2141-4d5e-8448-08ce3d14d322.png)
+![Quality Air](https://user-images.githubusercontent.com/97995925/218176153-ea0d42e6-e4de-4d34-b0af-da9c8b23b82a.png)
 
 # Quality Air Quality Cities
 
@@ -33,7 +33,7 @@ v.	Frequently commit your work to your local branch. Use simple, short, and desc
 i.	Use this command: git pull origin dev
 ii.	If there are no merge conflicts, the updates made to the dev branch will be incorporated into your local branch automatically.
 iii.	If there are merge conflicts, you will need to resolve conflicts manually. Please be careful with this step so that no code is lost. Once complete, you will need to add your changes: git add . and then commit again: git commit -m "add message here"
-5.	Push your committed and synced branch to the remote repository on GitHub: git push origin JD-5
+5.	Push your committed and synced branch to the remote repository on GitHub: git push origin EB-5
 6.	Submit a Pull Request:
 i.	Request that your branch be merged into the dev branch.
 ii.	Name the Pull Request in this format: "Fixes #5 - Issue Description".
@@ -47,4 +47,10 @@ iv.	Assign a reviewer (typically the lead developer).
 
 ## Infrastructure and Deployment
 
-## Contributors
+## Authors
+* **[Bryan Runck](https://cla.umn.edu/about/directory/profile/runck014)**  - *Project Advisor* - Senior Research Scientist (R7), GEMS Informatics Center, University of Minnesota. Global Food Ventures Faculty Scholar, MnDRIVE, University of Minnesota [https://gems.umn.edu/gems-team]
+* **[Jake Ford](https://cla.umn.edu/mgis/people/graduate-students)**  - *Developer* - University of Minnesota - Department of Geography [https://cla.umn.edu/mgis/mgis-program] - Extentsion of Quality Air / Quality Cities
+* **[Rob Hendrickson](https://cla.umn.edu/mgis/people/graduate-students)**   - *Developer* - University of Minnesota - Department of Geography [https://cla.umn.edu/mgis/mgis-program] - Extentsion of Quality Air / Quality Cities
+* **[Lauren Roach](https://cla.umn.edu/mgis/people/graduate-students)**   - *Developer* - University of Minnesota - Department of Geography [https://cla.umn.edu/mgis/mgis-program] - Extentsion of Quality Air / Quality Cities
+* **[Taylor Andersen-Beaver](https://cla.umn.edu/mgis/people/graduate-students)**   - *Developer* - University of Minnesota - Department of Geography [https://cla.umn.edu/mgis/mgis-program] - Extentsion of Quality Air / Quality Cities
+* **[Ethan Bott](https://cla.umn.edu/mgis/people/graduate-students)**   - *Developer* - University of Minnesota - Department of Geography [https://cla.umn.edu/mgis/mgis-program] - Extentsion of Quality Air / Quality Cities
