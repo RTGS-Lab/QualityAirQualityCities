@@ -1,21 +1,24 @@
+![Quality Air](https://user-images.githubusercontent.com/97995925/218174589-70892d79-2141-4d5e-8448-08ce3d14d322.png)
+
 # Quality Air Quality Cities
-# Getting Started
+
+## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
-# Project Purpose
+## Project Purpose
 
-# Installing
+### Installing
 
 Clone the repository (https://help.github.com/articles/cloning-a-repository/)
 
 ```bash
 git clone https://github.com/RTGS-Lab/QualityAirQualityCities.git
-Inside of your project folder (after clone):
 ```
+Inside of your project folder (after clone):
 
 Note: the secrets file is in the .gitignore and should never be uploaded to GitHub
 
-# Development Workflow
+## Development Workflow
 An issue will be assigned to you via GitHub. Your workflow begins after assignment:
 1.	Create a branch based on the dev branch with your initials and the issue number as the branch name (e.g. EB-5): git checkout -b EB-5
 
@@ -42,6 +45,6 @@ iv.	Assign a reviewer (typically the lead developer).
 
 
 
-# Infrastructure and Deployment
+## Infrastructure and Deployment
 
-# Contributors
+## Contributors
