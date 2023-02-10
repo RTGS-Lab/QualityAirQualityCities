@@ -1,7 +1,6 @@
 ![Quality Air (1)](https://user-images.githubusercontent.com/97995925/218177524-6e2dc175-4e3b-4d0c-9dd8-f4038d2adaff.png)
 
 # Quality Air Quality Cities
-Testing this text
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
@@ -42,6 +41,9 @@ An issue will be assigned to you via GitHub. Your workflow begins after assignme
      4. Assign a reviewer (typically the lead developer).
 8. Once your Pull Request is reviewed, address any feedback that needs to be addressed. Once you have addressed feedback, click the button to re-request review.
 9. Upon approval of the Pull Request, your issue will be merged into the `dev` branch and you can start on a new issue.
+
+## More Git help
+Check [this](https://ohshitgit.com/) out if your having a git of a problem...
 
 ## Infrastructure and Deployment
 
