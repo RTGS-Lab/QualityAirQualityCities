@@ -6,9 +6,19 @@ These instructions will get you a copy of the project up and running on your loc
 
 # Installing
 
+Clone the repository (https://help.github.com/articles/cloning-a-repository/)
+
+```bash
+git clone https://github.com/RTGS-Lab/QualityAirQualityCities.git
+Inside of your project folder (after clone):
+```
+
+Note: the secrets file is in the .gitignore and should never be uploaded to GitHub
+
 # Development Workflow
 An issue will be assigned to you via GitHub. Your workflow begins after assignment:
 1.	Create a branch based on the dev branch with your initials and the issue number as the branch name (e.g. EB-5): git checkout -b EB-5
+
 2.	Work on the issue.
 i.	In the "Projects" section on the sidebar of the issue page, change the "Status" to "In Progress".
 ii.	While you work, you may wish to have the app running live with live reload: npm start
