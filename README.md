@@ -13,7 +13,7 @@ These instructions will get you a copy of the project up and running on your loc
 Clone the repository (https://help.github.com/articles/cloning-a-repository/)
 
 ```bash
-git clone https://github.com/RTGS-Lab/QualityAirQualityCities.git
+git clone https://github.com/RTGS-Lab/QualityAirQualityCities
 ```
 Inside of your project folder (after clone):
 
@@ -29,7 +29,7 @@ An issue will be assigned to you via GitHub. Your workflow begins after assignme
      3. Add your changes: `git add .`
      4. Check that your files were added as expected: `git status`
      5. Frequently commit your work to your local branch. Use simple, short, and descriptive messages with a verb describing the work. Include the issue number. Example: `git commit -m "#5 added styling"`
-4. Update the [CHANGELOG.md](https://github.com/USGS-WiM/StreamStats/blob/dev/CHANGELOG.md) to describe your work.
+4. Update the CHANGELOG.md to describe your work.
 5. Ensure your code is synced with the latest version of the `dev` branch: 
      1. Use this command: `git pull origin dev`
      2. If there are no merge conflicts, the updates made to the `dev` branch will be incorporated into your local branch automatically.
