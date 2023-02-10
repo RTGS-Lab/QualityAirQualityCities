@@ -1,4 +1,4 @@
-![Quality Air](https://user-images.githubusercontent.com/97995925/218176014-abeaf7e2-899f-4d85-beaf-7bbee76a279f.png)
+![Quality Air](https://user-images.githubusercontent.com/97995925/218176153-ea0d42e6-e4de-4d34-b0af-da9c8b23b82a.png)
 
 # Quality Air Quality Cities
 
@@ -48,8 +48,9 @@ iv.	Assign a reviewer (typically the lead developer).
 ## Infrastructure and Deployment
 
 ## Authors
-* **[Jake Ford](https://cla.umn.edu/mgis/people/graduate-students)**  - *Developer* - [Quality Air / Quality Cities]
-* **[Rob Hendrickson](https://cla.umn.edu/mgis/people/graduate-students)**  - *Developer* - [Quality Air / Quality Cities]
-* **[Lauren Roach](https://cla.umn.edu/mgis/people/graduate-students)**  - *Developer* - [Quality Air / Quality Cities]
-* **[Taylor Andersen-Beaver](https://cla.umn.edu/mgis/people/graduate-students)**  - *Developer* - [Quality Air / Quality Cities]
-* **[Ethan Bott](https://cla.umn.edu/mgis/people/graduate-students)**  - *Developer* - [Quality Air / Quality Cities]
+* **[Bryan Runck](https://cla.umn.edu/about/directory/profile/runck014)**  - *Project Advisor* - Senior Research Scientist (R7), GEMS Informatics Center, University of Minnesota. Global Food Ventures Faculty Scholar, MnDRIVE, University of Minnesota [https://gems.umn.edu/gems-team]
+* **[Jake Ford](https://cla.umn.edu/mgis/people/graduate-students)**  - *Developer* - University of Minnesota - Department of Geography [https://cla.umn.edu/mgis/mgis-program] - Extentsion of Quality Air / Quality Cities
+* **[Rob Hendrickson](https://cla.umn.edu/mgis/people/graduate-students)**   - *Developer* - University of Minnesota - Department of Geography [https://cla.umn.edu/mgis/mgis-program] - Extentsion of Quality Air / Quality Cities
+* **[Lauren Roach](https://cla.umn.edu/mgis/people/graduate-students)**   - *Developer* - University of Minnesota - Department of Geography [https://cla.umn.edu/mgis/mgis-program] - Extentsion of Quality Air / Quality Cities
+* **[Taylor Andersen-Beaver](https://cla.umn.edu/mgis/people/graduate-students)**   - *Developer* - University of Minnesota - Department of Geography [https://cla.umn.edu/mgis/mgis-program] - Extentsion of Quality Air / Quality Cities
+* **[Ethan Bott](https://cla.umn.edu/mgis/people/graduate-students)**   - *Developer* - University of Minnesota - Department of Geography [https://cla.umn.edu/mgis/mgis-program] - Extentsion of Quality Air / Quality Cities
