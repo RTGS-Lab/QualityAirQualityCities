@@ -43,7 +43,7 @@ An issue will be assigned to you via GitHub. Your workflow begins after assignme
 9. Upon approval of the Pull Request, your issue will be merged into the `dev` branch and you can start on a new issue.
 
 ## More Git help
-Check [this](https://ohshitgit.com/) out if your having a git of a problem...
+Check [this](https://ohshitgit.com/) out if your having a git of a problem... [This is](https://education.github.com/git-cheat-sheet-education.pdf) a more basic cheatsheet.
 
 ## Infrastructure and Deployment
 
