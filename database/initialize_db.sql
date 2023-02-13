@@ -4,9 +4,9 @@
 
 CREATE DATABASE "MplsCommunityAir"; -- Create the database
 
-\c MplsCommunityAir; -- Connect to database
+-- \c "MplsCommunityAir"; -- Connect to database, Not sure this works in SQL
 
-CREATE SCHEMA PurpleAir; -- Create Schema
+CREATE SCHEMA "PurpleAir"; -- Create Schema
 
 CREATE EXTENSION postgis; -- Add spatial extensions
 CREATE EXTENSION postgis_topology;
