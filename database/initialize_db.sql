@@ -44,6 +44,16 @@ CREATE TABLE PurpleAir.MNDOT_Current_AADT_Segments -- Create table to store info
     geometry geometry
 );
 
+CREATE TABLE MPLSZoning -- Ethan work
+(
+    ZONE_ID integer,
+    ZONE_TYPE text,
+    ZONE_CODE text, 
+    AREA double precision,
+    ERROR_CODE text,
+    geometry geometry
+);
+
 -- CREATE TABLE PurpleAir.:MplsPurpleAirSensors -- Create table to store information on each sensor
 -- (
 --     sensor_id serial, -- Unique identifier
