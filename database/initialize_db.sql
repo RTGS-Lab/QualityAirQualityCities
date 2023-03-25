@@ -11,6 +11,14 @@ CREATE SCHEMA "PurpleAir"; -- Create Schema
 CREATE EXTENSION postgis; -- Add spatial extensions
 CREATE EXTENSION postgis_topology;
 
+CREATE TABLE PurpleAir.Minneapolis_Boundary
+(
+    CTU_ID int
+    CTU_NAME text
+    CTU_CODE text
+    geometry geometry
+);
+
 CREATE TABLE PurpleAir.MPCA_Facilities -- Create table to store information on each facility
 (
     FACILITY_ID int, -- Unique identifier
