@@ -54,6 +54,22 @@ CREATE TABLE MPLSZoning -- Ethan work
     geometry geometry
 );
 
+CREATE TABLE WIND_HISTORIC --create table to historic NOAA data
+(
+	STATION VARCHAR(255),
+    LATITUDE FLOAT,
+    LONGITUDE FLOAT,
+    DATE DATE,
+    MONTH INT,
+    DAY INT,
+    HOUR INT,
+    HLY_WIND_AVGSPD FLOAT,
+    HLY_WIND_VCDIR FLOAT,
+    ERROR_WINDSPD INT,
+    ERROR_WINDVCTR INT,
+    WIND_INTENSITY INT,
+    WIND_VCT_CATEGORY INT
+);
 -- CREATE TABLE PurpleAir.:MplsPurpleAirSensors -- Create table to store information on each sensor
 -- (
 --     sensor_id serial, -- Unique identifier
