@@ -1,3 +1,4 @@
+*.aprx
 **/.ipynb_checkpoints/*
 *.tif
 *QAQC_gdb*
@@ -11,3 +12,6 @@
 *.dbf
 *.xml
 *.html
+*.ovr
+*.tfw
+*.lock
