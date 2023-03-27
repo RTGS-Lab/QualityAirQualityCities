@@ -1,2 +1,12 @@
 **/.ipynb_checkpoints/*
 *.tif
+*QAQC_gdb*
+*.shp
+*.cpg
+*.sbx
+*.sbn
+*.shx
+*.prj
+*.dbf
+*.xml
+*.html
