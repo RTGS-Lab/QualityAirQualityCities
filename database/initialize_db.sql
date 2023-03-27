@@ -4,18 +4,21 @@
 
 CREATE DATABASE "MplsCommunityAir"; -- Create the database
 
-\c "MplsCommunityAir"; -- Connect to database
+
+-- Connect to database This needs a password!
+
+\c "MplsCommunityAir";
 
 CREATE SCHEMA "PurpleAir"; -- Create Schema
 
 CREATE EXTENSION postgis; -- Add spatial extensions
 CREATE EXTENSION postgis_topology;
 
-CREATE TABLE PurpleAir.Minneapolis_Boundary
+CREATE TABLE Minneapolis_Boundary
 (
-    CTU_ID int
-    CTU_NAME text
-    CTU_CODE text
+    CTU_ID int,
+    CTU_NAME text,
+    CTU_CODE text,
     geometry geometry
 );
 
@@ -77,6 +80,25 @@ CREATE TABLE WIND_HISTORIC --create table to historic NOAA data
     ERROR_WINDVCTR INT,
     WIND_INTENSITY INT,
     WIND_VCT_CATEGORY INT
+);
+
+CREATE TABLE PURPLEAIR_STATIONS
+(
+	sensor_index int,
+	last_modified int, 
+	date_created int,
+	last_seen int, 
+	name varchar(100),
+	location_type int, 
+	firmware_version varchar(30),
+	uptime int,
+	position_rating int,
+	latitude float,
+	longitude float,
+	altitude int,
+	channel_state int,
+	channel_flags int,
+	WKT geometry
 );
 -- CREATE TABLE PurpleAir.:MplsPurpleAirSensors -- Create table to store information on each sensor
 -- (
