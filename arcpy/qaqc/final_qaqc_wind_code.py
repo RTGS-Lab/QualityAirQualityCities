@@ -81,6 +81,57 @@ msp_wind['WIND_VCT_CATEGORY'] = msp_wind['HLY_WIND_VCDIR'].apply(check_range)
 
 print(msp_wind)
 
+print(msp_wind.columns)
+
+print(msp_wind.dtypes)
+
+!pip install psycopg2
+import psycopg2
+print(psycopg2.__version__)
+
+
+
+
+
+
+# convert the latitude and longitude columns to WKT
+msp_wind['WKT'] = 'POINT (' + msp_wind['LONGITUDE'].astype(str) + ' ' + msp_wind['LATITUDE'].astype(str) + ')'
+
+# print the dataframe
+print(msp_wind)
+
+# Convert the 'date' column to a standard format
+msp_wind['DATE'] = pd.to_datetime(msp_wind['DATE'], format='%m-%dT%H:%M:%S')
+
+# Print the resulting DataFrame
+print(msp_wind)
+
+# Connect to the database
+conn = psycopg2.connect(
+    host="34.171.172.42",
+    port="5432",
+    database="postgres",
+    user="postgres",
+    password="1234"
+)
+cur = conn.cursor()
+
+print('connection successful')
+
+# iterate over the dataframe and insert each row into the database using a SQL INSERT statement
+for index, row in msp_wind.iterrows():
+    cur.execute('''
+    INSERT INTO WIND_HISTORIC (STATION, LATITUDE, LONGITUDE, DATE, MONTH, DAY, HOUR, HLY_WIND_AVGSPD, HLY_WIND_VCDIR, ERROR_WINDSPD, ERROR_WINDVCTR, WIND_INTENSITY, WIND_VCT_CATEGORY, WKT) 
+    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s) 
+    ''', (row['STATION'], row['LATITUDE'], row['LONGITUDE'], row['DATE'], row['MONTH'], row['DAY'], row['HOUR'], row['HLY_WIND_AVGSPD'], row['HLY_WIND_VCDIR'], row['ERROR_WINDSPD'], row['ERROR_WINDVCTR'], row['WIND_INTENSITY'], row['WIND_VCT_CATEGORY'], row['WKT']))
+
+# commit the changes to the database and close the cursor and connection
+conn.commit()
+cur.close()
+conn.close()
+
+print('changes committed')
+
 
 
 
