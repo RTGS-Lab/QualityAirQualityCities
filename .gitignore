@@ -1,6 +1,7 @@
 **/.ipynb_checkpoints/*
 *.tif
 *QAQC_gdb*
+*.gdb*
 *.shp
 *.cpg
 *.sbx
