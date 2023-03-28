@@ -4,13 +4,26 @@
 
 CREATE DATABASE "MplsCommunityAir"; -- Create the database
 
-\c "MplsCommunityAir"; -- Connect to database
+
+-- Connect to database This needs a password!
+
+\c "MplsCommunityAir";
 
 CREATE SCHEMA "PurpleAir"; -- Create Schema
 
 CREATE EXTENSION postgis; -- Add spatial extensions
 CREATE EXTENSION postgis_topology;
 
+<<<<<<< HEAD
+=======
+CREATE TABLE Minneapolis_Boundary
+(
+    CTU_ID int,
+    CTU_NAME text,
+    CTU_CODE text,
+    geometry geometry
+);
+>>>>>>> 5dedd9df446dd36c99c7e0fba938539868eb8ec6
 
 CREATE TABLE PurpleAir.MPCA_Facilities -- Create table to store information on each facility
 (
