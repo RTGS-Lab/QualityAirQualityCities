@@ -85,7 +85,7 @@ print(msp_wind.columns)
 
 print(msp_wind.dtypes)
 
-!pip install psycopg2
+# !pip install psycopg2
 import psycopg2
 print(psycopg2.__version__)
 
@@ -108,11 +108,11 @@ print(msp_wind)
 
 # Connect to the database
 conn = psycopg2.connect(
-    host="34.171.172.42",
+    host="34.123.228.238",
     port="5432",
-    database="postgres",
+    database="lab0",
     user="postgres",
-    password=""
+    password="MonsterKitty3232"
 )
 cur = conn.cursor()
 
