@@ -13,6 +13,7 @@ CREATE SCHEMA "PurpleAir"; -- Create Schema
 
 CREATE EXTENSION postgis; -- Add spatial extensions
 CREATE EXTENSION postgis_topology;
+CREATE EXTENSION postgis_raster; --add raster extension
 
 CREATE TABLE Minneapolis_Boundary
 (
