@@ -13,6 +13,7 @@ CREATE SCHEMA "PurpleAir"; -- Create Schema
 
 CREATE EXTENSION postgis; -- Add spatial extensions
 CREATE EXTENSION postgis_topology;
+CREATE EXTENSION postgis_raster; --add raster extension
 
 CREATE TABLE Minneapolis_Boundary
 (
@@ -79,7 +80,8 @@ CREATE TABLE WIND_HISTORIC --create table to historic NOAA data
     ERROR_WINDSPD INT,
     ERROR_WINDVCTR INT,
     WIND_INTENSITY INT,
-    WIND_VCT_CATEGORY INT
+    WIND_VCT_CATEGORY INT,
+    WKT geometry
 );
 
 CREATE TABLE PURPLEAIR_STATIONS
