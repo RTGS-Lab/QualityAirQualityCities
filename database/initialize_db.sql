@@ -23,11 +23,10 @@ CREATE TABLE Minneapolis_Boundary
     geometry geometry
 );
 
-CREATE TABLE PurpleAir.MPCA_Facilities -- Create table to store information on each facility
+CREATE TABLE MPCA_Facilities -- Create table to store information on each facility
 (
     FACILITY_ID int, -- Unique identifier
     FACILITY_NAME text,
-    PERMIT_TYPE text,
     INDUSTRY_TYPE text, 
     NAICS_CODE int, -- a code to classify industry
     COUNTY text,
@@ -35,7 +34,7 @@ CREATE TABLE PurpleAir.MPCA_Facilities -- Create table to store information on e
     geometry geometry
 );
 
-CREATE TABLE PurpleAir.MPCA_Permitted_Emissions -- Create table to store historic facility emissions
+CREATE TABLE MPCA_Permitted_Emissions -- Create table to store historic facility emissions
 (
     FACILITY_ID int, -- Unique identifier
     YEAR int, 
@@ -43,7 +42,7 @@ CREATE TABLE PurpleAir.MPCA_Permitted_Emissions -- Create table to store histori
     LBS_EMITTED float
 );
 
-CREATE TABLE PurpleAir.MNDOT_Current_AADT_Segments -- Create table to store information on Current AADT segments
+CREATE TABLE MNDOT_Current_AADT_Segments -- Create table to store information on Current AADT segments
 ( 
     SEQUENCE_NUMBER int, -- Unique identifier
     ROUTE_LABEL text,
