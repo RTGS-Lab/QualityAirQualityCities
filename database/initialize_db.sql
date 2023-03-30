@@ -102,6 +102,24 @@ CREATE TABLE PURPLEAIR_STATIONS
 	channel_flags int,
 	WKT geometry
 );
+
+CREATE TABLE PURPLEAIR_REALTIME
+(
+    sensor_index int, 
+    humidity int, 
+    temperature int,
+    pressure float,
+    pm2_5 float,
+);
+
+CREATE TABLE PURPLEAIR_ERRORS
+(
+    sensor_index int,
+    humidity_error text,
+    temperature_error text,
+    pressure_error text,
+    pm2_5 text
+);
 -- CREATE TABLE PurpleAir.:MplsPurpleAirSensors -- Create table to store information on each sensor
 -- (
 --     sensor_id serial, -- Unique identifier
