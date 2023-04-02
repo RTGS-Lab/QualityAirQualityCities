@@ -20,3 +20,4 @@ data/shp_trans_aadt_traffic_segments/metadata/preview.jpg
 arcpy/qaqc/Scratch.ipynb
 data/PointSourceAirEmissionsInventory/Read_me.docx
 database/db_credentials.txt
+arcpy/qaqc/Wrangle_Emissions_full.ipynb

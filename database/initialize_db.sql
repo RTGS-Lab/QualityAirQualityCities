@@ -27,11 +27,17 @@ CREATE TABLE MPCA_Facilities -- Create table to store information on each facili
 (
     FACILITY_ID int, -- Unique identifier
     FACILITY_NAME text,
-    INDUSTRY_TYPE text, 
-    NAICS_CODE int, -- a code to classify industry
+    INDUSTRY_TYPE text, -- (from last report, will be list string)
+    NAICS_CODE text, -- a code to classify industry (from last report, will be list string)
     COUNTY text,
     LAST_REPORT int, -- last year of submission
     geometry geometry
+);
+
+CREATE TABLE MPCA_Facilities_HOLD -- facilities with Quality issues
+(
+    FACILITY_ID int, -- Unique identifier
+    Error_Codes text -- Descriptor on the issue(s) with the facility (list string)
 );
 
 CREATE TABLE MPCA_Permitted_Emissions -- Create table to store historic facility emissions
