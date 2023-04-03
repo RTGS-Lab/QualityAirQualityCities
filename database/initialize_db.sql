@@ -110,7 +110,8 @@ CREATE TABLE PURPLEAIR_STATIONS
 
 CREATE TABLE PURPLEAIR_REALTIME
 (
-    sensor_index int, 
+    sensor_index int,
+    timestamp timestamp,
     humidity int, 
     temperature int,
     pressure float,
