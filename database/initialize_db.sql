@@ -118,14 +118,36 @@ CREATE TABLE PURPLEAIR_REALTIME
     pm2_5 float,
 );
 
-CREATE TABLE PURPLEAIR_ERRORS
+CREATE TABLE PURPLEAIR_REALTIME_ERRORS
 (
     sensor_index int,
+    timestamp timestamp,
     humidity_error text,
     temperature_error text,
     pressure_error text,
     pm2_5 text
 );
+
+CREATE TABLE PURPLEAIR_HISTORIC
+(
+    sensor_index int,
+    timestamp timestamp,
+    humidity int, 
+    temperature int,
+    pressure float,
+    pm2_5 float,
+);
+
+CREATE TABLE PURPLEAIR_HISTORIC_ERRORS
+(
+    sensor_index int,
+    timestamp timestamp,
+    humidity_error text,
+    temperature_error text,
+    pressure_error text,
+    pm2_5 text
+);
+
 -- CREATE TABLE PurpleAir.:MplsPurpleAirSensors -- Create table to store information on each sensor
 -- (
 --     sensor_id serial, -- Unique identifier
