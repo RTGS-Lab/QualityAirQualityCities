@@ -106,14 +106,22 @@ msp_wind['DATE'] = pd.to_datetime(msp_wind['DATE'], format='%m-%dT%H:%M:%S')
 # Print the resulting DataFrame
 print(msp_wind)
 
-# Connect to the database
-conn = psycopg2.connect(
-    host="34.123.228.238",
-    port="5432",
-    database="lab0",
-    user="postgres",
-    password="MonsterKitty3232"
-)
+### Upload
+
+# Get credentials for database
+
+cred_pth = os.path.join(os.getcwd(), '..', '..', 'database', 'db_credentials.txt')
+
+with open(cred_pth, 'r') as f:
+    
+    creds = f.readlines()[0].rstrip('\n').split(', ')
+    
+# Connect to PostGIS Database
+
+pg_connection_dict = dict(zip(['dbname', 'user', 'password', 'port', 'host'], creds))
+
+conn = psycopg2.connect(**pg_connection_dict)
+
 cur = conn.cursor()
 
 print('connection successful')
