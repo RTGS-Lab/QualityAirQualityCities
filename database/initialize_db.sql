@@ -23,19 +23,24 @@ CREATE TABLE Minneapolis_Boundary
     geometry geometry
 );
 
-CREATE TABLE PurpleAir.MPCA_Facilities -- Create table to store information on each facility
+CREATE TABLE MPCA_Facilities -- Create table to store information on each facility
 (
     FACILITY_ID int, -- Unique identifier
     FACILITY_NAME text,
-    PERMIT_TYPE text,
-    INDUSTRY_TYPE text, 
-    NAICS_CODE int, -- a code to classify industry
+    INDUSTRY_TYPE text, -- (from last report, will be list string)
+    NAICS_CODE text, -- a code to classify industry (from last report, will be list string)
     COUNTY text,
     LAST_REPORT int, -- last year of submission
     geometry geometry
 );
 
-CREATE TABLE PurpleAir.MPCA_Permitted_Emissions -- Create table to store historic facility emissions
+CREATE TABLE MPCA_Facilities_HOLD -- facilities with Quality issues
+(
+    FACILITY_ID int, -- Unique identifier
+    Error_Codes text -- Descriptor on the issue(s) with the facility (list string)
+);
+
+CREATE TABLE MPCA_Permitted_Emissions -- Create table to store historic facility emissions
 (
     FACILITY_ID int, -- Unique identifier
     YEAR int, 
@@ -43,7 +48,7 @@ CREATE TABLE PurpleAir.MPCA_Permitted_Emissions -- Create table to store histori
     LBS_EMITTED float
 );
 
-CREATE TABLE PurpleAir.MNDOT_Current_AADT_Segments -- Create table to store information on Current AADT segments
+CREATE TABLE MNDOT_Current_AADT_Segments -- Create table to store information on Current AADT segments
 ( 
     SEQUENCE_NUMBER int, -- Unique identifier
     ROUTE_LABEL text,
@@ -101,6 +106,24 @@ CREATE TABLE PURPLEAIR_STATIONS
 	channel_state int,
 	channel_flags int,
 	WKT geometry
+);
+
+CREATE TABLE PURPLEAIR_REALTIME
+(
+    sensor_index int, 
+    humidity int, 
+    temperature int,
+    pressure float,
+    pm2_5 float,
+);
+
+CREATE TABLE PURPLEAIR_ERRORS
+(
+    sensor_index int,
+    humidity_error text,
+    temperature_error text,
+    pressure_error text,
+    pm2_5 text
 );
 -- CREATE TABLE PurpleAir.:MplsPurpleAirSensors -- Create table to store information on each sensor
 -- (
