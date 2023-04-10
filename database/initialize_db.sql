@@ -84,20 +84,17 @@ CREATE TABLE WIND_HISTORIC --create table to historic NOAA data
 CREATE TABLE PURPLEAIR_STATIONS
 (
 	sensor_index int,
-	last_modified int, 
-	date_created int,
-	last_seen int, 
+	last_modified date, 
+	date_created date,
+	last_seen date,
 	name varchar(100),
-	location_type int, 
 	firmware_version varchar(30),
 	uptime int,
 	position_rating int,
-	latitude float,
-	longitude float,
 	altitude int,
 	channel_state int,
 	channel_flags int,
-	WKT geometry
+	geometry geometry
 );
 
 CREATE TABLE PURPLEAIR_REALTIME
