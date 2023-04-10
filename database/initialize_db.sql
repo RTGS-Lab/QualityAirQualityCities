@@ -63,10 +63,7 @@ CREATE TABLE MNDOT_Current_AADT_Segments -- Create table to store information on
 
 CREATE TABLE MPLSZoning -- Ethan work
 (
-    ZONE_ID integer,
-    ZONE_TYPE text,
     ZONE_CODE text, 
-    AREA double precision,
     ERROR_CODE text,
     geometry geometry
 );
