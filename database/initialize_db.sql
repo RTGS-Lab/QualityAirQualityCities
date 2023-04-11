@@ -63,10 +63,7 @@ CREATE TABLE MNDOT_Current_AADT_Segments -- Create table to store information on
 
 CREATE TABLE MPLSZoning -- Ethan work
 (
-    ZONE_ID integer,
-    ZONE_TYPE text,
     ZONE_CODE text, 
-    AREA double precision,
     ERROR_CODE text,
     geometry geometry
 );
@@ -74,66 +71,58 @@ CREATE TABLE MPLSZoning -- Ethan work
 CREATE TABLE WIND_HISTORIC --create table to historic NOAA data
 (
 	STATION VARCHAR(255),
-    LATITUDE FLOAT,
-    LONGITUDE FLOAT,
     DATE DATE,
-    MONTH INT,
-    DAY INT,
-    HOUR INT,
     HLY_WIND_AVGSPD FLOAT,
     HLY_WIND_VCDIR FLOAT,
     ERROR_WINDSPD INT,
     ERROR_WINDVCTR INT,
     WIND_INTENSITY INT,
     WIND_VCT_CATEGORY INT,
-    WKT geometry
+    geometry geometry
 );
 
 CREATE TABLE PURPLEAIR_STATIONS
 (
 	sensor_index int,
-	last_modified int, 
-	date_created int,
-	last_seen int, 
+	last_modified date, 
+	date_created date,
+	last_seen date,
 	name varchar(100),
-	location_type int, 
 	firmware_version varchar(30),
 	uptime int,
 	position_rating int,
-	latitude float,
-	longitude float,
 	altitude int,
 	channel_state int,
 	channel_flags int,
-	WKT geometry
+	geometry geometry
 );
 
 CREATE TABLE PURPLEAIR_REALTIME
 (
     sensor_index int,
     timestamp timestamp,
-    humidity int, 
-    temperature int,
+    humidity float, 
+    temperature float,
     pressure float,
-    pm2_5 float,
+    pm2_5 float
 );
 
 CREATE TABLE PURPLEAIR_REALTIME_ERRORS
-(
+
     sensor_index int,
     timestamp timestamp,
     humidity_error text,
     temperature_error text,
     pressure_error text,
-    pm2_5 text
+    pm2_5_error text
 );
 
 CREATE TABLE PURPLEAIR_HISTORIC
 (
     sensor_index int,
     timestamp timestamp,
-    humidity int, 
-    temperature int,
+    humidity float,
+    temperature float,
     pressure float,
     pm2_5 float,
 );
@@ -145,7 +134,7 @@ CREATE TABLE PURPLEAIR_HISTORIC_ERRORS
     humidity_error text,
     temperature_error text,
     pressure_error text,
-    pm2_5 text
+    pm2_5_error text
 );
 
 -- CREATE TABLE PurpleAir.:MplsPurpleAirSensors -- Create table to store information on each sensor
