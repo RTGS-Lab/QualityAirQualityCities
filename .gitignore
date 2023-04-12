@@ -22,3 +22,8 @@ data/PointSourceAirEmissionsInventory/Read_me.docx
 database/db_credentials.txt
 arcpy/qaqc/Wrangle_Emissions_full.ipynb
 data/zoning.geojson
+*.adf
+*.nit
+*.dat
+*.dir
+

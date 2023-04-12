@@ -4,10 +4,7 @@
 
 CREATE DATABASE "MplsCommunityAir"; -- Create the database
 
-
--- Connect to database This needs a password!
-
-\c "MplsCommunityAir";
+\c "MplsCommunityAir"; -- Connect to database This needs a password!
 
 CREATE SCHEMA "PurpleAir"; -- Create Schema
 
