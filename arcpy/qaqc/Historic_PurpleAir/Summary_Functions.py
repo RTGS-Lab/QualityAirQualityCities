@@ -32,4 +32,20 @@ summary_stats_functions += [n_observations]
 
 # ~~~~~
 
-## Next Function
+## Min/Max
+
+def getminmax(df):
+    max = df.pm25.max()
+    min = df.pm25.min()
+    
+    return [min, max]
+
+# Add to storage
+
+summary_stats_names += ['min', 'max'] # Stat Names
+
+summary_stats_dtypes += [float, float] # Stat Value Types
+
+summary_stats_functions += [getminmax]
+
+# ~~~~~
