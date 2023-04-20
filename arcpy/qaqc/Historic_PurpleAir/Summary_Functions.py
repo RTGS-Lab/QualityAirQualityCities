@@ -112,7 +112,7 @@ def pm25_morningRush_stats(df):
         pm25_morningRush_mean = df_6_to_9['pm25'].mean()
         pm25_morningRush_std = df_6_to_9['pm25'].std()
         
-        stats_list = [pm25_morningRush_mean, pm25_morningRush_min, mintime, pm25_morningRush_max, maxtime, pm25_morningRush_std]
+        stats_list = [pm25_morningRush_mean, pm25_morningRush_min, str(mintime), pm25_morningRush_max, str(maxtime), pm25_morningRush_std]
     
     return stats_list
 
