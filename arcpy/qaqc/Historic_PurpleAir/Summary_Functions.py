@@ -73,6 +73,44 @@ summary_stats_dtypes += [float, float, float, float] # Stat Value Types
 summary_stats_functions += [pm25_morningRush_stats]
 
 # ~~~~~
+
+# Evening rush hour statistics
+
+def getEveningRushHourStats(df):
+    pm25_stats = []
+    # set time range for filtering
+    df['timestamp'] = pd.to_datetime(df['timestamp'])
+    start_time = pd.to_datetime('15:00:00', format='%H:%M:%S').time()
+    end_time = pd.to_datetime('18:30:00', format='%H:%M:%S').time()
+
+    # iterate over unique dates in dataframe
+    for date in df['timestamp'].dt.date.unique():
+        # filter dataframe by date and time range
+        filtered_df = df[(df['timestamp'].dt.date == date) & (df['timestamp'].dt.time >= start_time) & (df['timestamp'].dt.time <= end_time)]
+
+        # find minimum and maximum PM2.5 readings and corresponding timestamps
+        min_pm25 = filtered_df['pm25'].min()
+        min_pm25_timestamp = filtered_df.loc[filtered_df['pm25'].idxmin(), 'timestamp'].time()
+        max_pm25 = filtered_df['pm25'].max()
+        max_pm25_timestamp = filtered_df.loc[filtered_df['pm25'].idxmax(), 'timestamp'].time()
+
+        # calculate mean and standard deviation of PM2.5 readings
+        mean_pm25 = filtered_df['pm25'].mean()
+        std_pm25 = filtered_df['pm25'].std()
+
+        # add results to list
+        pm25_stats += [min_pm25, str(min_pm25_timestamp), max_pm25, str(max_pm25_timestamp), mean_pm25, std_pm25]
+
+    return pm25_stats
+
+# Add to storage
+
+summary_stats_names += ['pm25_eveningRush_min', 'pm25Time_eveningRush_min', 'pm25_eveningRush_max', 'pm25Time_eveningRush_max', 'pm25_eveningRush_mean', 'pm25_eveningRush_std'] # Stat Names
+
+summary_stats_dtypes += [float, str, float, str, float, float] # Stat Value Types
+
+summary_stats_functions += [pm25_eveningRush_stats]
+
 #Daytime ambient statistics
 
 def pm25_daytimeAmbient_stats(df):
