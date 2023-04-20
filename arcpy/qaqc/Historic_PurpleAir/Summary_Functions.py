@@ -215,7 +215,7 @@ def pm25_daytimeAmbient_stats(df):
         pm25_daytimeAmbient_mean = filtered_daytime_ambient['pm25'].mean()
         pm25_daytimeAmbient_std = filtered_daytime_ambient['pm25'].std()
     
-    stats_list =  [pm25_daytimeAmbient_mean, pm25_daytimeAmbient_min, str(mintime), pm25_daytimeAmbient_max, str(maxtime), pm25_daytimeAmbient_std]
+        stats_list =  [pm25_daytimeAmbient_mean, pm25_daytimeAmbient_min, str(mintime), pm25_daytimeAmbient_max, str(maxtime), pm25_daytimeAmbient_std]
     
     return stats_list
 
@@ -266,7 +266,7 @@ def nighttime_ambient(df):
         maxtime = pms[pms == max].index[0].time()
         std = pms.std()
     
-    stats_list = [mean, min, str(mintime), max, str(maxtime), std]
+        stats_list = [mean, min, str(mintime), max, str(maxtime), std]
 
     return stats_list
     
