@@ -27,4 +27,5 @@ data/zoning.geojson
 *.dat
 *.dir
 *.csv
-arcpy/qaqc/Historic_PurpleAir/Scratch-Daily_Summaries.ipynb
+*arcpy/qaqc/Historic_PurpleAir/Scratch-Daily_Summaries.ipynb
+*arcpy\qaqc\Historic_PurpleAir\Scratch-Daily_Summaries.ipynb
