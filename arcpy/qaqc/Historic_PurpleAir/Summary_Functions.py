@@ -148,7 +148,7 @@ def getEveningRushHourStats(df):
     
     if len(filtered_df) == 0:
         
-        stats_list = [None]*6
+        pm25_stats = [None]*6
     
     else:
     
