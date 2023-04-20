@@ -50,6 +50,30 @@ summary_stats_functions += [getminmax]
 
 # ~~~~~
 
+## Daily Total Minutes Above 12 micrograms per cubic meter
+
+def daily_minutes_above_12ug(df):
+    #convert timestamp to pandas datetime object for comparison
+    df['timestamp'] = pd.to_datetime(df.timestamp)
+
+    # Filter rows where pm25 values are above 12
+    df_above_12 = df[df['pm25'] > 12]
+
+    # each reading in the new df represents a ten minute average for that time block, so I'll multiply the length of the column by 10 to get the total time in minutes!
+    mins_above_12ug = len(df_above_12) * 10
+    
+    return mins_above_12ug 
+
+# Add to storage
+
+summary_stats_names += ['pm25_fullDay_minutesAbove12ug'] # Stat Names
+
+summary_stats_dtypes += [int] # Stat Value Types
+
+summary_stats_functions += [daily_minutes_above_12ug]
+
+# ~~~~~
+
 # Morning rush hour statistics
 
 df['timestamp'] = pd.to_datetime(df.timestamp)
