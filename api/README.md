@@ -1,4 +1,4 @@
-## 1) Set up Server on remote Google Cloud Run 
+## 1) Set up Server on remote Google Cloud Run (The API is [here](https://github.com/RwHendrickson/QAQC_api))
 
 Set up a [Google Cloud Run Build](https://cloud.google.com/run/docs/continuous-deployment-with-cloud-build) using the GitHub repository:
 

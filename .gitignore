@@ -26,4 +26,5 @@ data/zoning.geojson
 *.nit
 *.dat
 *.dir
-
+*.csv
+arcpy/qaqc/Historic_PurpleAir/Scratch-Daily_Summaries.ipynb
