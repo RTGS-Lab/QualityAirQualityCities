@@ -32,6 +32,29 @@ summary_stats_functions += [n_observations]
 
 # ~~~~~
 
+def weather_stats(df):
+    
+    stat_names = ['humidity', 'temperature', 'pressure']
+    means = []
+    
+    for stat in stat_names:
+        
+        means.append(df[stat].mean())
+    
+    return means
+
+# Add to storage
+
+summary_stats_names += ['humidity_fullDay_mean', 'temperature_fullDay_mean',
+                       'pressure_fullDay_mean'] # Stat Names
+
+summary_stats_dtypes += [float, float,
+                        float] # Stat Value Types
+
+summary_stats_functions += [weather_stats]
+
+# ~~~~~
+
 ## Daily Stats
 
 def pm25_fullDay_stats(df):
