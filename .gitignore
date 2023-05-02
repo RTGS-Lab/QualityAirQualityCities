@@ -28,3 +28,7 @@ data/zoning.geojson
 *.dir
 *.csv
 arcpy/qaqc/Historic_PurpleAir/Scratch-Daily_Summaries.ipynb
+*.gif
+*.jpg
+arcpy/Exploratory/gifmaps
+arcpy/Exploratory/test.png
