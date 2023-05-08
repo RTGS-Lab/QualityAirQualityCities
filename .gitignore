@@ -32,3 +32,4 @@ arcpy/qaqc/Historic_PurpleAir/Scratch-Daily_Summaries.ipynb
 *.jpg
 arcpy/Exploratory/gifmaps
 arcpy/Exploratory/test.png
+*.png
